@@ -31,7 +31,7 @@ async function fetchData(urlApi){
                 </div>
                 <div class="mt-4 flex justify-between">
                     <h3 class="text-sm text-gray-700">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    <a href="https://www.youtube.com/watch?v=${video.id.videoId}" target="_blank" rel="noopener noreferrer" class="text-gray-900 font-medium hover:text-gray-700">
                     ${video.snippet.title}
                     </h3>
                 </div>
@@ -44,3 +44,7 @@ async function fetchData(urlApi){
         alert('Error al cargar los datos')
     }
 })();
+
+// ¿Para qué nos sirve la clase XMLHttpRequest?
+
+// XMLHttpRequest es una API que nos permite hacer peticiones HTTP de forma asíncrona. Es decir, que podemos hacer peticiones HTTP sin tener que recargar la página.
